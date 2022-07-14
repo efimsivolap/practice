@@ -174,21 +174,12 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-@media screen and (max-width: 1280px) {
-  .about__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
+
+.about__grid {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-@media screen and (max-width: 768px) {
-  .info {
-    position: relative;
-  }
-  .about__grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
+
 .text-h2 {
   text-align: center;
   margin-bottom: 60px;
@@ -213,7 +204,6 @@ body {
   background-color: var(--accent-color);
   margin-bottom: 15px;
 }
-
 .project-h3 {
   color: var(--dark-color);
   margin-bottom: 13px;
@@ -221,28 +211,16 @@ body {
 .text-p {
   color: var(--gray-color);
 }
-
-@media screen and (max-width: 1280px) {
-  .about {
-    padding: 450px 15px 110px 15px;
-  }
+.about__flex {
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .about {
-    padding-top: 150px;
-    padding-bottom: 80px;
-  }
-  .about__flex {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about__flex-item {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-  .about__flex-item:last-child {
-    margin-bottom: 0;
-  }
+.about__flex-item {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+.about__flex-item:last-child {
+  margin-bottom: 0;
 }
 .request {
   background-color: var(--accent-color);
@@ -271,7 +249,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-
 .request__btn {
   margin-top: 20px;
   border: none;
@@ -285,25 +262,12 @@ body {
   letter-spacing: 0.05em;
   padding: 14px 30px;
 }
-
 .request__icon {
   margin-right: 15px;
-}
-@media screen and (max-width: 1280px) {
-  .request {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .request__flex {
-    flex-wrap: wrap;
-  }
 }
 .services {
   padding: 150px 0;
 }
-
 .section__h2,
 .services__h4 {
   color: #000;
@@ -332,56 +296,24 @@ body {
 .services__icon {
   margin: 0 auto 30px;
 }
-
-@media screen and (max-width: 1280px) {
-  .services {
-    padding-left: 15px;
-  }
-  .services__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .services__grid-item {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .services__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 0;
 }
-@media screen and (max-width: 1280px) {
-  .portfolio__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .portfolio__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .question {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
 .question.section__h2 {
   margin-bottom: 50px;
 }
-
 .question_h3 {
   text-transform: uppercase;
   color: var(--accent-color);
   margin-bottom: 30px;
 }
-
 .question_p {
   margin-bottom: 40px;
   color: var(--gray-color);
@@ -411,11 +343,6 @@ body {
 .question_h3.close + .question_p {
   display: none;
 }
-@media screen and (max-width: 1280px) {
-  .question {
-    padding: 150px 15px 110px;
-  }
-}
 .partners {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -436,14 +363,7 @@ body {
   margin-bottom: 20px;
   max-width: 170px;
 }
-@media screen and (max-width: 1280px) {
-  .partners__flex {
-    justify-content: center;
-  }
-  .partnerts__item:nth-child(5n) {
-    margin-right: 40px;
-  }
-}
+
 .reviews {
   padding: 150px 0;
 }
@@ -473,19 +393,7 @@ body {
 .reviews__authir-accent {
   color: var(--accent-color);
 }
-@media screen and (max-width: 1280px) {
-  .reviews {
-    padding: 100px 15px;
-  }
-  .reviews__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .reviews__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 .contacts {
   padding: 100px 150px;
 }
@@ -519,22 +427,7 @@ body {
 .contacts__h3-accent {
   color: var(--accent-color);
 }
-@media screen and (max-width: 1280px) {
-  .contacts__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contacts__item {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacts__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .contacts__item {
-    max-width: 100%;
-  }
-}
+
 .footer {
   padding: 30px 0;
   background-color: var(--dark-color);
@@ -545,12 +438,83 @@ body {
   justify-content: space-between;
 }
 
+/* all @maedia */
 @media screen and (max-width: 1280px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .about {
+    padding: 450px 15px 110px 15px;
+  }
+  .request {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services {
+    padding-left: 15px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .services__grid-item {
+    width: 100%;
+  }
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .question {
+    padding: 150px 15px 110px;
+  }
+  .partners__flex {
+    justify-content: center;
+  }
+  .partnerts__item:nth-child(5n) {
+    margin-right: 40px;
+  }
+  .reviews {
+    padding: 100px 15px;
+  }
+  .reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__item {
+    max-width: 100%;
+  }
   .footer {
     padding: 30px 15px;
   }
 }
 @media screen and (max-width: 768px) {
+  .info {
+    position: relative;
+  }
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .request__flex {
+    flex-wrap: wrap;
+  }
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contacts__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contacts__item {
+    max-width: 100%;
+  }
   .footer__flex {
     flex-direction: column;
   }
